@@ -13,7 +13,7 @@ import numpy
 # Your code here:
 # -----------------------------------------------
 
-def step(x):
+def step(x): 
     if x > 0:
         return 1
     else:
