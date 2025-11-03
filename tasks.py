@@ -31,9 +31,12 @@ def step(x):
 
 # Your code here:
 # -----------------------------------------------
-def ReLu(array, cutoff = 0):
-    return [num if num < cutoff else cutoff for num in array]
 
+def ReLu(array, cutoff = 0):
+    return [num if num > cutoff else cutoff for num in array]
+
+
+# Testing the ReLu function
 x = [1, 5, -1, -10]
 print(ReLu(x))
 
@@ -54,9 +57,9 @@ def neural_net_layer(d2, d1):
     mult = d2 @ d1
     return ReLu(mult)
 
+# Testing the neural_net_layer function
 ar2 = np.array([[-7,2,3],[-4,5,6],[-7,8,9]])
 ar1 = np.array([1,-2,-3])
-
 
 print(neural_net_layer(ar2, ar1))
 
