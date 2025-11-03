@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
@@ -54,8 +54,8 @@ def neural_net_layer(d2, d1):
     mult = d2 @ d1
     return ReLu(mult)
 
-ar2 = numpy.array([[-7,2,3],[-4,5,6],[-7,8,9]])
-ar1 = numpy.array([1,-2,-3])
+ar2 = np.array([[-7,2,3],[-4,5,6],[-7,8,9]])
+ar1 = np.array([1,-2,-3])
 
 
 print(neural_net_layer(ar2, ar1))
